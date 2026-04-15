@@ -1,0 +1,56 @@
+TITLE:  TR
+
+DATA:
+    FILE IS
+    \\micro.intra\projekt\P0623$\P0623_Gem\Juta\MPlus\Input\Data\TR2.dat;
+ 
+VARIABLE:
+    NAMES ARE 
+	id 
+	cup55 wch55 llow55 ltop55 dis55 pov55 dtop55 soc55 own55 pen55 
+	cup56 wch56 llow56 ltop56 dis56 pov56 dtop56 soc56 own56 pen56 alive56
+	cup57 wch57 llow57 ltop57 dis57 pov57 dtop57 soc57 own57 pen57 alive57
+	cup58 wch58 llow58 ltop58 dis58 pov58 dtop58 soc58 own58 pen58 alive58
+	cup59 wch59 llow59 ltop59 dis59 pov59 dtop59 soc59 own59 pen59 alive59
+	cup60 wch60 llow60 ltop60 dis60 pov60 dtop60 soc60 own60 pen60 alive60
+	cup61 wch61 llow61 ltop61 dis61 pov61 dtop61 soc61 own61 pen61 alive61
+	cup62 wch62 llow62 ltop62 dis62 pov62 dtop62 soc62 own62 pen62 alive62
+	cup63 wch63 llow63 ltop63 dis63 pov63 dtop63 soc63 own63 pen63 alive63
+	cup64 wch64 llow64 ltop64 dis64 pov64 dtop64 soc64 own64 pen64 alive64
+	cup65 wch65 llow65 ltop65 dis65 pov65 dtop65 soc65 own65 pen65 alive65
+	cup66 wch66 llow66 ltop66 dis66 pov66 dtop66 soc66 own66 pen66 alive66
+	cup67 wch67 llow67 ltop67 dis67 pov67 dtop67 soc67 own67 pen67 alive67
+	cup68 wch68 llow68 ltop68 dis68 pov68 dtop68 soc68 own68 pen68 alive68
+	cup69 wch69 llow69 ltop69 dis69 pov69 dtop69 soc69 own69 pen69 alive69;
+Missing are all (-9999) ;
+
+    IDVARIABLE IS id;
+
+    CATEGORICAL ARE 
+	cup55 wch55 llow55 ltop55 dis55 pov55 dtop55 soc55 own55 pen55 
+	cup56 wch56 llow56 ltop56 dis56 pov56 dtop56 soc56 own56 pen56 alive56
+	cup57 wch57 llow57 ltop57 dis57 pov57 dtop57 soc57 own57 pen57 alive57
+	cup58 wch58 llow58 ltop58 dis58 pov58 dtop58 soc58 own58 pen58 alive58
+	cup59 wch59 llow59 ltop59 dis59 pov59 dtop59 soc59 own59 pen59 alive59
+	cup60 wch60 llow60 ltop60 dis60 pov60 dtop60 soc60 own60 pen60 alive60
+	cup61 wch61 llow61 ltop61 dis61 pov61 dtop61 soc61 own61 pen61 alive61
+	cup62 wch62 llow62 ltop62 dis62 pov62 dtop62 soc62 own62 pen62 alive62
+	cup63 wch63 llow63 ltop63 dis63 pov63 dtop63 soc63 own63 pen63 alive63
+	cup64 wch64 llow64 ltop64 dis64 pov64 dtop64 soc64 own64 pen64 alive64
+	cup65 wch65 llow65 ltop65 dis65 pov65 dtop65 soc65 own65 pen65 alive65
+	cup66 wch66 llow66 ltop66 dis66 pov66 dtop66 soc66 own66 pen66 alive66
+	cup67 wch67 llow67 ltop67 dis67 pov67 dtop67 soc67 own67 pen67 alive67
+	cup68 wch68 llow68 ltop68 dis68 pov68 dtop68 soc68 own68 pen68 alive68
+	cup69 wch69 llow69 ltop69 dis69 pov69 dtop69 soc69 own69 pen69 alive69;
+
+    CLASSES = C(5);
+  
+  ANALYSIS:
+  TYPE IS MIXTURE;
+  ESTIMATOR IS MLR;
+  STARTS = 80 10;
+  
+  OUTPUT: MODINDICES;
+
+
+

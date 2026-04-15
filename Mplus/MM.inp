@@ -1,0 +1,56 @@
+TITLE:  MM
+
+DATA:
+    FILE IS
+    \\micro.intra\projekt\P0623$\P0623_Gem\Juta\MPlus\Input\Data\MM.dat;
+ 
+VARIABLE:
+    NAMES ARE 
+	id 
+	cup35 wch35 llow35 ltop35 dis35 pov35 dtop35 soc35 own35
+	cup36 wch36 llow36 ltop36 dis36 pov36 dtop36 soc36 own36
+	cup37 wch37 llow37 ltop37 dis37 pov37 dtop37 soc37 own37
+	cup38 wch38 llow38 ltop38 dis38 pov38 dtop38 soc38 own38
+	cup39 wch39 llow39 ltop39 dis39 pov39 dtop39 soc39 own39
+	cup40 wch40 llow40 ltop40 dis40 pov40 dtop40 soc40 own40
+	cup41 wch41 llow41 ltop41 dis41 pov41 dtop41 soc41 own41
+	cup42 wch42 llow42 ltop42 dis42 pov42 dtop42 soc42 own42
+	cup43 wch43 llow43 ltop43 dis43 pov43 dtop43 soc43 own43
+	cup44 wch44 llow44 ltop44 dis44 pov44 dtop44 soc44 own44
+	cup45 wch45 llow45 ltop45 dis45 pov45 dtop45 soc45 own45
+	cup46 wch46 llow46 ltop46 dis46 pov46 dtop46 soc46 own46
+	cup47 wch47 llow47 ltop47 dis47 pov47 dtop47 soc47 own47
+	cup48 wch48 llow48 ltop48 dis48 pov48 dtop48 soc48 own48
+	cup49 wch49 llow49 ltop49 dis49 pov49 dtop49 soc49 own49;
+Missing are all (-9999) ;
+
+    IDVARIABLE IS id;
+
+    CATEGORICAL ARE 
+	cup35 wch35 llow35 ltop35 dis35 pov35 dtop35 soc35 own35
+	cup36 wch36 llow36 ltop36 dis36 pov36 dtop36 soc36 own36
+	cup37 wch37 llow37 ltop37 dis37 pov37 dtop37 soc37 own37
+	cup38 wch38 llow38 ltop38 dis38 pov38 dtop38 soc38 own38
+	cup39 wch39 llow39 ltop39 dis39 pov39 dtop39 soc39 own39
+	cup40 wch40 llow40 ltop40 dis40 pov40 dtop40 soc40 own40
+	cup41 wch41 llow41 ltop41 dis41 pov41 dtop41 soc41 own41
+	cup42 wch42 llow42 ltop42 dis42 pov42 dtop42 soc42 own42
+	cup43 wch43 llow43 ltop43 dis43 pov43 dtop43 soc43 own43
+	cup44 wch44 llow44 ltop44 dis44 pov44 dtop44 soc44 own44
+	cup45 wch45 llow45 ltop45 dis45 pov45 dtop45 soc45 own45
+	cup46 wch46 llow46 ltop46 dis46 pov46 dtop46 soc46 own46
+	cup47 wch47 llow47 ltop47 dis47 pov47 dtop47 soc47 own47
+	cup48 wch48 llow48 ltop48 dis48 pov48 dtop48 soc48 own48
+	cup49 wch49 llow49 ltop49 dis49 pov49 dtop49 soc49 own49;
+
+    CLASSES = C(5);
+  
+  ANALYSIS:
+  TYPE IS MIXTURE;
+  ESTIMATOR IS MLR;
+  STARTS = 80 10;
+
+  OUTPUT: MODINDICES;
+
+
+

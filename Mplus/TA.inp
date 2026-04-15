@@ -1,0 +1,82 @@
+TITLE:  TA
+
+DATA:
+    FILE IS
+    \\micro.intra\projekt\P0623$\P0623_Gem\Juta\MPlus\Input\Data\TA.dat;
+ 
+ VARIABLE:
+    NAMES ARE 
+	id 
+	edu216 edu316 edu416 edu516 cup16 wch16 ch16 
+	llow16 ltop16 dis16 pov16 dtop16 soc16 own16
+	edu217 edu317 edu417 edu517 cup17 wch17 ch17 
+	llow17 ltop17 dis17 pov17 dtop17 soc17 own17
+	edu218 edu318 edu418 edu518 cup18 wch18 ch18 
+	llow18 ltop18 dis18 pov18 dtop18 soc18 own18
+	edu219 edu319 edu419 edu519 cup19 wch19 ch19 
+	llow19 ltop19 dis19 pov19 dtop19 soc19 own19
+	edu220 edu320 edu420 edu520 cup20 wch20 ch20 
+	llow20 ltop20 dis20 pov20 dtop20 soc20 own20
+	edu221 edu321 edu421 edu521 cup21 wch21 ch21 
+	llow21 ltop21 dis21 pov21 dtop21 soc21 own21
+	edu222 edu322 edu422 edu522 cup22 wch22 ch22 
+	llow22 ltop22 dis22 pov22 dtop22 soc22 own22
+	edu223 edu323 edu423 edu523 cup23 wch23 ch23 
+	llow23 ltop23 dis23 pov23 dtop23 soc23 own23
+	edu224 edu324 edu424 edu524 cup24 wch24 ch24 
+	llow24 ltop24 dis24 pov24 dtop24 soc24 own24
+	edu225 edu325 edu425 edu525 cup25 wch25 ch25 
+	llow25 ltop25 dis25 pov25 dtop25 soc25 own25
+	edu226 edu326 edu426 edu526 cup26 wch26 ch26 
+	llow26 ltop26 dis26 pov26 dtop26 soc26 own26
+	edu227 edu327 edu427 edu527 cup27 wch27 ch27 
+	llow27 ltop27 dis27 pov27 dtop27 soc27 own27
+	edu228 edu328 edu428 edu528 cup28 wch28 ch28 
+	llow28 ltop28 dis28 pov28 dtop28 soc28 own28
+	edu229 edu329 edu429 edu529 cup29 wch29 ch29 
+	llow29 ltop29 dis29 pov29 dtop29 soc29 own29;
+Missing are all (-9999) ;
+
+    IDVARIABLE IS id;
+
+    CATEGORICAL ARE 
+	edu216 edu316 edu416 edu516 cup16 wch16 ch16 
+	llow16 ltop16 dis16 pov16 dtop16 soc16 own16
+	edu217 edu317 edu417 edu517 cup17 wch17 ch17 
+	llow17 ltop17 dis17 pov17 dtop17 soc17 own17
+	edu218 edu318 edu418 edu518 cup18 wch18 ch18 
+	llow18 ltop18 dis18 pov18 dtop18 soc18 own18
+	edu219 edu319 edu419 edu519 cup19 wch19 ch19 
+	llow19 ltop19 dis19 pov19 dtop19 soc19 own19
+	edu220 edu320 edu420 edu520 cup20 wch20 ch20 
+	llow20 ltop20 dis20 pov20 dtop20 soc20 own20
+	edu221 edu321 edu421 edu521 cup21 wch21 ch21 
+	llow21 ltop21 dis21 pov21 dtop21 soc21 own21
+	edu222 edu322 edu422 edu522 cup22 wch22 ch22 
+	llow22 ltop22 dis22 pov22 dtop22 soc22 own22
+	edu223 edu323 edu423 edu523 cup23 wch23 ch23 
+	llow23 ltop23 dis23 pov23 dtop23 soc23 own23
+	edu224 edu324 edu424 edu524 cup24 wch24 ch24 
+	llow24 ltop24 dis24 pov24 dtop24 soc24 own24
+	edu225 edu325 edu425 edu525 cup25 wch25 ch25 
+	llow25 ltop25 dis25 pov25 dtop25 soc25 own25
+	edu226 edu326 edu426 edu526 cup26 wch26 ch26 
+	llow26 ltop26 dis26 pov26 dtop26 soc26 own26
+	edu227 edu327 edu427 edu527 cup27 wch27 ch27 
+	llow27 ltop27 dis27 pov27 dtop27 soc27 own27
+	edu228 edu328 edu428 edu528 cup28 wch28 ch28 
+	llow28 ltop28 dis28 pov28 dtop28 soc28 own28
+	edu229 edu329 edu429 edu529 cup29 wch29 ch29 
+	llow29 ltop29 dis29 pov29 dtop29 soc29 own29;
+	
+    CLASSES = C(5);
+  
+  ANALYSIS:
+  TYPE IS MIXTURE;
+  ESTIMATOR IS MLR;
+  STARTS = 80 10;
+  
+  OUTPUT: MODINDICES;
+
+
+
